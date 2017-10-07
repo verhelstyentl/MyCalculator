@@ -2,9 +2,9 @@
 
 namespace MyCalculator.Application.UnitTest.Services.MyCalculatorServiceUnitTest
 {
-    public static class AddTest
+    public static class SubtractTest
     {
-        public class Given_Valid_Dependencies_When_Adding_Two_Numbers
+        public class Given_Valid_Dependencies_When_Subtracting_Two_Numbers
             : BaseScenario.Given_Valid_Dependencies_And_Constructed_Instance_Scenario
         {
             private int _nr1;
@@ -15,20 +15,20 @@ namespace MyCalculator.Application.UnitTest.Services.MyCalculatorServiceUnitTest
             protected override void Given()
             {
                 base.Given();
-                _nr1 = 1;
-                _nr2 = 2;
-                _expectedResult = 3;
+                _nr1 = 5;
+                _nr2 = 3;
+                _expectedResult = 2;
             }
 
             protected override void When()
             {
-                _result = Sut.Add(_nr1, _nr2);
+                _result = Sut.Subtract(_nr1, _nr2);
             }
 
             [Fact]
-            public void Then_It_Should_Return_The_Correct_Sum()
+            public void Then_It_Should_Return_The_Correct_Difference()
             {
-                Assert.Equal(_expectedResult,_result);
+                Assert.Equal(_expectedResult, _result);
             }
         }
     }
