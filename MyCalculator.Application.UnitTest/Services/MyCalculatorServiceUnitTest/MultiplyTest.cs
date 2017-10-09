@@ -2,7 +2,7 @@
 
 namespace MyCalculator.Application.UnitTest.Services.MyCalculatorServiceUnitTest
 {
-    public class MultiplyTest
+    public static class MultiplyTest
     {
         public class Given_Valid_Dependencies_When_Multiplying_Two_Numbers
             : BaseScenario.Given_Valid_Dependencies_And_Constructed_Instance_Scenario
