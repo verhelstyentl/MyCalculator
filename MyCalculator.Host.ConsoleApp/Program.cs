@@ -21,6 +21,10 @@ namespace MyCalculator.Host.ConsoleApp
 
             Console.WriteLine($"{nr1} * {nr2} = {product}");
 
+            var subtraction = calc.Subtract(nr2, nr1);
+
+            Console.WriteLine($"{nr2} * {nr1} = {subtraction}");
+
             Console.ReadKey();
         }
     }
