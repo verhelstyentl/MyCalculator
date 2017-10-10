@@ -17,6 +17,10 @@ namespace MyCalculator.Host.ConsoleApp
 
             Console.WriteLine($"{nr1} + {nr2} = {sum}");
 
+            var product = calc.Multiply(nr1, nr2);
+
+            Console.WriteLine($"{nr1} * {nr2} = {product}");
+
             Console.ReadKey();
         }
     }
